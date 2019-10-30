@@ -43,12 +43,12 @@ body{
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~BANNER SECTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` */
 
 .banner .container{
-  height: 100vh;
+  height: auto;
   padding-top: 180px;
 }
 
 .banner .row{
-  height: 100vh;
+  height: auto;
 
 }
 
@@ -96,7 +96,7 @@ body{
 }
 
 
-/* ~~~~~~~~~~~~~~~~~~~~OUR STORY~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~OUR STORY~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .ourStory{
   margin: 80px;
@@ -222,26 +222,26 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: luminosity;
-
 }
 
 
 .happyHour img{
-  width: 70px;
-  margin-top: 110px;
+  max-width: 70px;
+  /* margin-top: 110px; */
+  height: 80px;
 }
 
 .happyHour hr{
   width: 230px;
   border-width: 3px;
   border-color: #b3b5b4;
-  margin-top: 130px;
+  align-self: center;
+  /* margin-top: 130px; */
 }
 
 .happyHour h6{
   font-family: 'Abril Fatface';
   color: #fff;
-
 }
 
 .happyHour h3{
@@ -277,13 +277,6 @@ body{
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CUSTOMER FEEDBACK SECTION~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-.feedback{
-  /*background: #fff url('../images/feedbackBack.jpg');
-  min-height: 60vh;
-  opacity: 0.1;
-  background: rgba(0,0,0, 0.2) url('../images/feedbackBack.jpg');
-  */
-}
 
 .feedback h2{
   font-family: 'Abril Fatface';
@@ -395,3 +388,65 @@ footer h5{
   text-transform: uppercase; 
 }
 
+
+
+
+
+
+
+/* ___________________________MEDIA QUERY STARTS_______________________________ */
+
+
+/* @media (min-width: 768px) and (max-width: 1199.98px) { ... }
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width */
+
+
+
+
+@media (max-width: 991.98px) {
+  .banner h1{
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .banner h1{
+    font-size: 40px;
+  }
+
+  .banner h6{
+    font-size: 13px;
+  }
+
+  .banner p{
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .banner h1{
+    font-size: 30px;
+  }
+
+  .happyHour h3{
+    font-size: 25px;
+  }
+
+  .happyHour h6{
+    font-size: 12px;
+  }
+}
